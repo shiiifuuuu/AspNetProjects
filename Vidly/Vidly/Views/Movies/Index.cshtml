@@ -1,0 +1,21 @@
+﻿@model Vidly.Models.MovieViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table class="tableList">
+	<tr>
+		<th>Sl no.</th>
+		<th>Movie Name</th>
+	</tr>
+	@{ int count = 0;}
+	@foreach (var movie in Model.Movies)
+	{
+		<tr>
+			<td>@(++count)</td>
+			<td>@movie.Name</td>
+		</tr>
+	}
+</table>
+

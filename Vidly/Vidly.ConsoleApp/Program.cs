@@ -13,12 +13,14 @@ namespace Vidly.ConsoleApp
 	{
 		static void Main(string[] args)
 		{
+//			MOVIES DB CRUD
 //			MovieCrudOperation.MovieAdd();
 //			MovieCrudOperation.MovieGetAll();
 
+//			CUSTOMER DB CRUD
 //			CustomerCrudOperation.CustomerAdd();
+//			CustomerCrudOperation.CustomerGetAll();
 
-			CustomerCrudOperation.CustomerGetAll();
 			Console.ReadKey();
 		}
 	}

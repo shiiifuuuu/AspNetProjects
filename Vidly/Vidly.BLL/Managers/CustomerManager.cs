@@ -16,5 +16,25 @@ namespace Vidly.BLL.Managers
 		{
 			return _customerRepository.Add(customer);
 		}
+
+		public bool Update(Customer customer)
+		{
+			return _customerRepository.Update(customer);
+		}
+
+		public bool Delete(int id)
+		{
+			return _customerRepository.Delete(id);
+		}
+
+		public List<Customer> GetAll()
+		{
+			return _customerRepository.GetAll();
+		}
+
+		public Customer GetById(int id)
+		{
+			return _customerRepository.GetById(id);
+		}
 	}
 }

@@ -16,8 +16,9 @@ namespace Vidly.ConsoleApp
 //			MovieCrudOperation.MovieAdd();
 //			MovieCrudOperation.MovieGetAll();
 
-			CustomerCrudOperation.CustomerAdd();
+//			CustomerCrudOperation.CustomerAdd();
 
+			CustomerCrudOperation.CustomerGetAll();
 			Console.ReadKey();
 		}
 	}

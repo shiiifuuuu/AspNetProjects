@@ -17,5 +17,30 @@ namespace Vidly.DAL.Repos
 			_dbContext.Customers.Add(customer);
 			return _dbContext.SaveChanges() > 0;
 		}
+
+		public bool Update(Customer customer)
+		{
+			Customer dbCustomer = _dbContext.Customers.FirstOrDefault(c => c.Id == customer.Id);
+			dbCustomer.Name = customer.Name;
+			return _dbContext.SaveChanges() > 0;
+		}
+
+		public bool Delete(int id)
+		{
+			Customer dbCustomer = _dbContext.Customers.FirstOrDefault(c => c.Id == id);
+			_dbContext.Customers.Remove(dbCustomer);
+			return _dbContext.SaveChanges() > 0;
+		}
+
+		public List<Customer> GetAll()
+		{
+			return _dbContext.Customers.ToList();
+		}
+
+		public Customer GetById(int id)
+		{
+			Customer dbCustomer = _dbContext.Customers.FirstOrDefault(c => c.Id == id);
+			return dbCustomer;
+		}
 	}
 }

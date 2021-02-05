@@ -1,0 +1,5 @@
+F:\Tutorials\Mosh\asp_net\Vidly\Vidly.MODEL\bin\Debug\Vidly.MODEL.dll
+F:\Tutorials\Mosh\asp_net\Vidly\Vidly.MODEL\bin\Debug\Vidly.MODEL.pdb
+F:\Tutorials\Mosh\asp_net\Vidly\Vidly.MODEL\obj\Debug\Vidly.MODEL.csprojAssemblyReference.cache
+F:\Tutorials\Mosh\asp_net\Vidly\Vidly.MODEL\obj\Debug\Vidly.MODEL.dll
+F:\Tutorials\Mosh\asp_net\Vidly\Vidly.MODEL\obj\Debug\Vidly.MODEL.pdb

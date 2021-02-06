@@ -36,5 +36,10 @@ namespace Vidly.BLL.Managers
 		{
 			return _customerRepository.GetById(id);
 		}
+
+		public List<Customer> GetByEagerLoading()
+		{
+			return _customerRepository.GetByEagerLoading();
+		}
 	}
 }

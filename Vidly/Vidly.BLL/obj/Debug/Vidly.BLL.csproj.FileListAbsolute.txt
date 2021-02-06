@@ -30,3 +30,4 @@ F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.BLL\obj\Debug\Vidly.BLL.csprojAssem
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.BLL\obj\Debug\Vidly.BLL.csproj.CopyComplete
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.BLL\obj\Debug\Vidly.BLL.dll
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.BLL\obj\Debug\Vidly.BLL.pdb
+F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.BLL\bin\Debug\Vidly.MODEL.dll.config

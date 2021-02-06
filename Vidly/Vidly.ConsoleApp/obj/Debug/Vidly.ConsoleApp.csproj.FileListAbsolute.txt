@@ -40,3 +40,4 @@ F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.ConsoleApp\obj\Debug\Vidly.ConsoleA
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.ConsoleApp\obj\Debug\Vidly.ConsoleApp.csproj.CopyComplete
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.ConsoleApp\obj\Debug\Vidly.ConsoleApp.exe
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.ConsoleApp\obj\Debug\Vidly.ConsoleApp.pdb
+F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.ConsoleApp\bin\Debug\Vidly.MODEL.dll.config

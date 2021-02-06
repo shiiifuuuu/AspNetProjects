@@ -174,3 +174,4 @@ F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\Vidly.DAL.pdb
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\Vidly.DAL.dll.config
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\Vidly.DatabaseContext.pdb
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\Vidly.DatabaseContext.dll.config
+F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\Vidly.MODEL.dll.config

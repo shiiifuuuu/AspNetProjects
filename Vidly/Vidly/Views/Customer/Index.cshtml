@@ -8,14 +8,60 @@
 	<tr>
 		<th>Sl no.</th>
 		<th>Customers</th>
+		<th>Membership</th>
+		<th>Duration</th>
+		<th>Cost</th>
+		<th>Discount %</th>
 	</tr>
 	@{ int count = 0;}
 	@foreach (var customer in Model.Customers)
 	{
 		<tr>
-			<th>@(++count)</th>
-			<th>@Html.ActionLink(@customer.Name, "Details","Customer",new{@customer.Id},null)</th>
+			<td>@(++count)</td>
+			<td>@Html.ActionLink(@customer.Name, "Details", "Customer", new { @customer.Id }, null)</td>
+			<td>@GetMembershipTypeName(customer.MembershipTypeId)</td>
+			<td>@GetMonths(customer.MembershipType.DurationInMonths)</td>
+			<td>@customer.MembershipType.SignUpFee$</td>
+			<td>@customer.MembershipType.DiscountRate%</td>
 		</tr>
 	}
 </table>
+
+@{
+
+	string GetMembershipTypeName(int id)
+	{
+		switch (id)
+		{
+			case 1:
+				return "Basic";
+				break;
+			case 2:
+				return "Basic Plus";
+				break;
+			case 3:
+				return "Standard";
+				break;
+			case 4:
+				return "Premium";
+				break;
+			default:
+				return "";
+		}
+	}
+}
+@{
+
+	string GetMonths(int id)
+	{
+		if (id == 1 || id == 0)
+		{
+			return $"{id} Month";
+		}
+		else
+		{
+			return $"{id} Months";
+		}
+	}
+}
 

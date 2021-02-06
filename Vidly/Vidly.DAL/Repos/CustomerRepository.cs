@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,6 +42,11 @@ namespace Vidly.DAL.Repos
 		{
 			Customer dbCustomer = _dbContext.Customers.FirstOrDefault(c => c.Id == id);
 			return dbCustomer;
+		}
+
+		public List<Customer> GetByEagerLoading()
+		{
+			return _dbContext.Customers.Include(c => c.MembershipType).ToList();
 		}
 	}
 }

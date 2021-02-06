@@ -13,6 +13,10 @@ namespace Vidly.ConsoleApp
 	{
 		static void Main(string[] args)
 		{
+//			DateTime? d = new DateTime(1996,2,1);
+//			Console.WriteLine(d.Value.Year);
+//			DateTime dob = new DateTime(1980,1,20);
+//			Console.WriteLine(dob);
 //			MOVIES DB CRUD
 //			MovieCrudOperation.MovieAdd();
 //			MovieCrudOperation.MovieGetAll();

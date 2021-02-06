@@ -48,5 +48,10 @@ namespace Vidly.DAL.Repos
 		{
 			return _dbContext.Customers.Include(c => c.MembershipType).ToList();
 		}
+
+		public Customer GetByIdEagerLoading(int id)
+		{
+			return _dbContext.Customers.Include(c => c.MembershipType).FirstOrDefault(c => c.Id == id);
+		}
 	}
 }

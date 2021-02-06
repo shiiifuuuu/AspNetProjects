@@ -23,7 +23,10 @@ namespace Vidly.ConsoleApp.Models
 //			Customer c = new Customer() { Name = "John Wilsy" };
 //			Customer c = new Customer(){Name = "Brad Traversy", MembershipTypeId = 1};
 //			Customer c = new Customer(){Name = "John Wisley", MembershipTypeId = 3};
-			Customer c = new Customer(){Name = "Merry Williams", MembershipTypeId = 4};
+//			Customer c = new Customer(){Name = "Merry Williams", MembershipTypeId = 4};
+//			Customer c = new Customer(){Name = "Peter Hudson", MembershipTypeId = 2, DoB = new DateTime(1985, 1, 20)};
+//			Customer c = new Customer(){Name = "Steve Rogers", MembershipTypeId = 2, DoB = new DateTime(1960, 1, 12)};
+			Customer c = new Customer(){Name = "Aria Stark", MembershipTypeId = 2};
 			bool success = _customerManager.Add(c);
 			Console.WriteLine("Adding a customer Success");
 		}
@@ -40,16 +43,49 @@ namespace Vidly.ConsoleApp.Models
 		}
 		public static void CustomerGetAll()
 		{
-			List<Customer> customers = _customerManager.GetAll();
+			List<Customer> customers = _customerManager.GetAllByEagerLoading();
 			foreach (var customer in customers)
 			{
-				Console.WriteLine(customer.Name);
+				var a = customer.DoB;
+				if (customer.DoB.Equals(null))
+				{
+					Console.WriteLine($"{customer.Name} | {customer.MembershipType.Name} | - | -");
+				}
+				else
+				{
+					Console.WriteLine($"{customer.Name} | {customer.MembershipType.Name} | {customer.DoB.Value.Year} | {customer.DoB.Value.Month}");
+				}
+				
 			}
 		}
 		public static void CustomerGetById()
 		{
 			Customer customer = _customerManager.GetById(1);
 			Console.WriteLine(customer.Name);
+		}
+
+		public void CustomerBirthDate()
+		{
+			DateTime dob = new DateTime(1996, 11, 24);
+			//			Console.WriteLine(dob.ToLongDateString());
+			//			Console.WriteLine(dob);
+			DateTime now = DateTime.Today;
+			var m = now.Month - dob.Month;
+			var y = now.Year - dob.Year;
+			int year, month;
+			if (m < 0)
+			{
+				year = y - 1;
+				month = m + 12;
+			}
+			else
+			{
+				year = y;
+				month = m;
+			}
+			Console.WriteLine($"Birthdate: {dob.ToLongDateString()}");
+			Console.WriteLine($"Today: {now.ToLongDateString()}");
+			Console.WriteLine($"age: {year} years {month} months (approx.)");
 		}
 	}
 }

@@ -88,6 +88,14 @@
     <Compile Include="Migrations\202102061347051_MembershipTypeModelNameRequired.designer.cs">
       <DependentUpon>202102061347051_MembershipTypeModelNameRequired.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102061447109_CustomerBirthDateAdd.cs" />
+    <Compile Include="Migrations\202102061447109_CustomerBirthDateAdd.designer.cs">
+      <DependentUpon>202102061447109_CustomerBirthDateAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102061727141_CustomerModelDateTimeNullable.cs" />
+    <Compile Include="Migrations\202102061727141_CustomerModelDateTimeNullable.designer.cs">
+      <DependentUpon>202102061727141_CustomerModelDateTimeNullable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -128,6 +136,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102061347051_MembershipTypeModelNameRequired.resx">
       <DependentUpon>202102061347051_MembershipTypeModelNameRequired.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102061447109_CustomerBirthDateAdd.resx">
+      <DependentUpon>202102061447109_CustomerBirthDateAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102061727141_CustomerModelDateTimeNullable.resx">
+      <DependentUpon>202102061727141_CustomerModelDateTimeNullable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

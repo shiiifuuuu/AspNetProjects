@@ -10,7 +10,7 @@ F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.MODEL\bin\Debug\EntityFramework.dll
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.MODEL\bin\Debug\EntityFramework.SqlServer.dll
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.MODEL\bin\Debug\EntityFramework.xml
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.MODEL\bin\Debug\EntityFramework.SqlServer.xml
-F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.MODEL\obj\Debug\Vidly.MODEL.csprojAssemblyReference.cache
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.MODEL\obj\Debug\Vidly.MODEL.csproj.CopyComplete
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.MODEL\obj\Debug\Vidly.MODEL.dll
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.MODEL\obj\Debug\Vidly.MODEL.pdb
+F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.MODEL\obj\Debug\Vidly.MODEL.csprojAssemblyReference.cache

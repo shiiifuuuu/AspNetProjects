@@ -8,13 +8,17 @@
 	<tr>
 		<th>Sl no.</th>
 		<th>Movie Name</th>
+		<th>Genre</th>
 	</tr>
 	@{ int count = 0;}
 	@foreach (var movie in Model.Movies)
 	{
 		<tr>
 			<td>@(++count)</td>
-			<td>@Html.ActionLink(@movie.Name, "Details", "Movie", new{@movie.Id},null)</td>
+			<td>
+				@Html.ActionLink(@movie.Name, "Details", "Movie", new {@movie.Id}, null)
+			</td>
+			<td>@movie.Genre</td>
 		</tr>
 	}
 </table>

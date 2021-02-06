@@ -96,6 +96,22 @@
     <Compile Include="Migrations\202102061727141_CustomerModelDateTimeNullable.designer.cs">
       <DependentUpon>202102061727141_CustomerModelDateTimeNullable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102061803552_MovieModelUpdate.cs" />
+    <Compile Include="Migrations\202102061803552_MovieModelUpdate.designer.cs">
+      <DependentUpon>202102061803552_MovieModelUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102061809441_DBMoviesValueUpdate.cs" />
+    <Compile Include="Migrations\202102061809441_DBMoviesValueUpdate.designer.cs">
+      <DependentUpon>202102061809441_DBMoviesValueUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102061819420_MovieModelUpdate1.cs" />
+    <Compile Include="Migrations\202102061819420_MovieModelUpdate1.designer.cs">
+      <DependentUpon>202102061819420_MovieModelUpdate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102061821358_MovieModelUpdate2.cs" />
+    <Compile Include="Migrations\202102061821358_MovieModelUpdate2.designer.cs">
+      <DependentUpon>202102061821358_MovieModelUpdate2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -142,6 +158,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102061727141_CustomerModelDateTimeNullable.resx">
       <DependentUpon>202102061727141_CustomerModelDateTimeNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102061803552_MovieModelUpdate.resx">
+      <DependentUpon>202102061803552_MovieModelUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102061809441_DBMoviesValueUpdate.resx">
+      <DependentUpon>202102061809441_DBMoviesValueUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102061819420_MovieModelUpdate1.resx">
+      <DependentUpon>202102061819420_MovieModelUpdate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102061821358_MovieModelUpdate2.resx">
+      <DependentUpon>202102061821358_MovieModelUpdate2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

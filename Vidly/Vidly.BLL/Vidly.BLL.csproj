@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Managers\CustomerManager.cs" />
+    <Compile Include="Managers\MembershipTypeManager.cs" />
     <Compile Include="Managers\MovieManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

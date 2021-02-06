@@ -13,3 +13,4 @@ F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.MODEL\bin\Debug\EntityFramework.Sql
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.MODEL\obj\Debug\Vidly.MODEL.csproj.CopyComplete
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.MODEL\obj\Debug\Vidly.MODEL.dll
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.MODEL\obj\Debug\Vidly.MODEL.pdb
+F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.MODEL\obj\Debug\Vidly.MODEL.csprojAssemblyReference.cache

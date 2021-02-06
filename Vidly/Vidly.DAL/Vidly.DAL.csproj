@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\CustomerRepository.cs" />
+    <Compile Include="Repos\MembershipTypeRepository.cs" />
     <Compile Include="Repos\MovieRepository.cs" />
   </ItemGroup>
   <ItemGroup />

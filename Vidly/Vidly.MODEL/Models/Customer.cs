@@ -12,9 +12,8 @@ namespace Vidly.MODEL.Models
 		public int Id { get; set; }
 		[Required]
 		public string Name { get; set; }
-
 		public byte MembershipTypeId { get; set; }
 		public MembershipType MembershipType { get; set; }
-		public DateTime? DoB { get; set; }
+		public DateTime? BirthDate { get; set; }
 	}
 }

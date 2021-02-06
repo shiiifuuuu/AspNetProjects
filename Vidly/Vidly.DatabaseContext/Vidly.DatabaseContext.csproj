@@ -112,6 +112,10 @@
     <Compile Include="Migrations\202102061821358_MovieModelUpdate2.designer.cs">
       <DependentUpon>202102061821358_MovieModelUpdate2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102062159420_CustomerModelPropertyDoBChangedToBirthDate.cs" />
+    <Compile Include="Migrations\202102062159420_CustomerModelPropertyDoBChangedToBirthDate.designer.cs">
+      <DependentUpon>202102062159420_CustomerModelPropertyDoBChangedToBirthDate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -170,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102061821358_MovieModelUpdate2.resx">
       <DependentUpon>202102061821358_MovieModelUpdate2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102062159420_CustomerModelPropertyDoBChangedToBirthDate.resx">
+      <DependentUpon>202102062159420_CustomerModelPropertyDoBChangedToBirthDate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

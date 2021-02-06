@@ -12,5 +12,6 @@ namespace Vidly.DatabaseContext.DatabaseContext
 	{
 		public DbSet<Movie> Movies { set; get; }
 		public DbSet<Customer> Customers { get; set; }
+		public DbSet<MembershipType> MembershipTypes { get; set; }
 	}
 }

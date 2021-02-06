@@ -60,6 +60,22 @@
     <Compile Include="Migrations\202102051409224_InitialCustomerModelAdd.designer.cs">
       <DependentUpon>202102051409224_InitialCustomerModelAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102061139580_MovieModelDataAnnotationsAdd.cs" />
+    <Compile Include="Migrations\202102061139580_MovieModelDataAnnotationsAdd.designer.cs">
+      <DependentUpon>202102061139580_MovieModelDataAnnotationsAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102061204283_MemberShipTypeModelInitial.cs" />
+    <Compile Include="Migrations\202102061204283_MemberShipTypeModelInitial.designer.cs">
+      <DependentUpon>202102061204283_MemberShipTypeModelInitial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102061227007_MembershipTypeValueAdd.cs" />
+    <Compile Include="Migrations\202102061227007_MembershipTypeValueAdd.designer.cs">
+      <DependentUpon>202102061227007_MembershipTypeValueAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102061236024_CustomerLinkedToMembershipType.cs" />
+    <Compile Include="Migrations\202102061236024_CustomerLinkedToMembershipType.designer.cs">
+      <DependentUpon>202102061236024_CustomerLinkedToMembershipType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -79,6 +95,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102051409224_InitialCustomerModelAdd.resx">
       <DependentUpon>202102051409224_InitialCustomerModelAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102061139580_MovieModelDataAnnotationsAdd.resx">
+      <DependentUpon>202102061139580_MovieModelDataAnnotationsAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102061204283_MemberShipTypeModelInitial.resx">
+      <DependentUpon>202102061204283_MemberShipTypeModelInitial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102061227007_MembershipTypeValueAdd.resx">
+      <DependentUpon>202102061227007_MembershipTypeValueAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102061236024_CustomerLinkedToMembershipType.resx">
+      <DependentUpon>202102061236024_CustomerLinkedToMembershipType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

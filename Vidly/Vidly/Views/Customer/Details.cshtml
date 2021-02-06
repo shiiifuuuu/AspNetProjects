@@ -7,10 +7,10 @@
 <h2>@Model.Name</h2>
 <ul>
 	<li>Membership Type: @Model.MembershipType.Name</li>
-	@if (!Model.DoB.Equals(null))
+	@if (!Model.BirthDate.Equals(null))
 	{
 @* 		<li>Birthday: @Model.DoB.Value.ToLongDateString()</li> *@
-		<li>Birthdate: @Model.DoB.Value.ToString("d")</li>
+		<li>Birthdate: @Model.BirthDate.Value.ToString("d")</li>
 	}
 </ul>
 

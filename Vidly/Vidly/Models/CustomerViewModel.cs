@@ -11,11 +11,15 @@ namespace Vidly.Models
 	{
 		public int Id { get; set; }
 		public string Name { get; set; }
+
+		[Display(Name = "Membership Types")]
 		public byte MembershipTypeId { get; set; }
 		public MembershipType MembershipType { get; set; }
+
 		[Display(Name = "Date of Birth")]
 		public DateTime? BirthDate { get; set; }
 		public List<Customer> Customers { set; get; }
 		public bool IsSubscribeToNewsLetter { get; set; }
+		public IEnumerable<MembershipType> MembershipTypes { set; get; }
 	}
 }

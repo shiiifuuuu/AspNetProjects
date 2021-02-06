@@ -4,6 +4,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@Html.ActionLink("Add a Customer", "New", "Customer",new{@class="btn btn-primary"})
 <table class="tableList">
 	<tr>
 		<th>Sl no.</th>
@@ -31,13 +32,16 @@
 
 	string GetMonths(int id)
 	{
-		if (id == 1 || id == 0)
+		switch (id)
 		{
-			return $"{id} Month";
-		}
-		else
-		{
-			return $"{id} Months";
+			case 0:
+				return "Pay as you go";
+				break;
+			case 1:
+				return $"{id} Month";
+				break;
+			default: return $"{id} Months";
+				break;
 		}
 	}
 }

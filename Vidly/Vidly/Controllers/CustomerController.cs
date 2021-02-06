@@ -12,6 +12,8 @@ namespace Vidly.Controllers
     public class CustomerController : Controller
     {
         CustomerManager _customerManager = new CustomerManager();
+        MembershipTypeManager _membershipTypeManager = new MembershipTypeManager();
+
         // GET: Customer
         public ActionResult Index()
         {
@@ -38,7 +40,16 @@ namespace Vidly.Controllers
 
         public ActionResult New()
         {
-	        return View();
+	        CustomerViewModel viewModel = new CustomerViewModel();
+            viewModel.MembershipTypes = _membershipTypeManager.GetAll();
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        public ActionResult Create(Customer newCustomer)
+        {
+	        bool success = _customerManager.Add(newCustomer);
+	        return RedirectToAction("Index", "Customer");
         }
     }
 }

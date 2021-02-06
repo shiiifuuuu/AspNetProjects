@@ -41,23 +41,23 @@ namespace Vidly.ConsoleApp.Models
 			bool success = _customerManager.Delete(5);
 			Console.Write("Deleting a customer data Success");
 		}
-		public static void CustomerGetAll()
-		{
-			List<Customer> customers = _customerManager.GetAll();
-			foreach (var customer in customers)
-			{
-				var a = customer.DoB;
-				if (customer.DoB.Equals(null))
-				{
-					Console.WriteLine($"{customer.Name} | {customer.MembershipType.Name} | - | -");
-				}
-				else
-				{
-					Console.WriteLine($"{customer.Name} | {customer.MembershipType.Name} | {customer.DoB.Value.Year} | {customer.DoB.Value.Month}");
-				}
-				
-			}
-		}
+//		public static void CustomerGetAll()
+//		{
+//			List<Customer> customers = _customerManager.GetAll();
+//			foreach (var customer in customers)
+//			{
+//				var a = customer.DoB;
+//				if (customer.DoB.Equals(null))
+//				{
+//					Console.WriteLine($"{customer.Name} | {customer.MembershipType.Name} | - | -");
+//				}
+//				else
+//				{
+//					Console.WriteLine($"{customer.Name} | {customer.MembershipType.Name} | {customer.DoB.Value.Year} | {customer.DoB.Value.Month}");
+//				}
+//				
+//			}
+//		}
 		public static void CustomerGetById()
 		{
 			Customer customer = _customerManager.GetById(1);

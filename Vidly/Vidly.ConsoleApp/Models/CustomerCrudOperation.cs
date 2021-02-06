@@ -43,7 +43,7 @@ namespace Vidly.ConsoleApp.Models
 		}
 		public static void CustomerGetAll()
 		{
-			List<Customer> customers = _customerManager.GetAllByEagerLoading();
+			List<Customer> customers = _customerManager.GetAll();
 			foreach (var customer in customers)
 			{
 				var a = customer.DoB;

@@ -35,22 +35,13 @@ namespace Vidly.DAL.Repos
 
 		public List<Customer> GetAll()
 		{
-			return _dbContext.Customers.ToList();
+//			return _dbContext.Customers.ToList();
+			return _dbContext.Customers.Include(c => c.MembershipType).ToList();
 		}
 
 		public Customer GetById(int id)
 		{
-			Customer dbCustomer = _dbContext.Customers.FirstOrDefault(c => c.Id == id);
-			return dbCustomer;
-		}
-
-		public List<Customer> GetByEagerLoading()
-		{
-			return _dbContext.Customers.Include(c => c.MembershipType).ToList();
-		}
-
-		public Customer GetByIdEagerLoading(int id)
-		{
+//			return _dbContext.Customers.FirstOrDefault(c => c.Id == id);
 			return _dbContext.Customers.Include(c => c.MembershipType).FirstOrDefault(c => c.Id == id);
 		}
 	}

@@ -6,18 +6,24 @@ using Vidly.Models;
 
 namespace Vidly.Controllers
 {
-	public class MoviesController : Controller
+	public class MovieController : Controller
 	{
+		MovieManager _movieManager = new MovieManager();
 		//GET: Movies
 		public ActionResult Index()
 		{
-			MovieManager _movieManager = new MovieManager();
 			List<Movie> movies = _movieManager.GetAll();
 
 			MovieViewModel viewModel = new MovieViewModel();
 			viewModel.Movies = movies;
 
 			return View(viewModel);
+		}
+
+		public ActionResult Details(int id)
+		{
+			Movie movie = _movieManager.GetById(id);
+			return View(movie);
 		}
 	}
 }

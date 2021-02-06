@@ -14,7 +14,7 @@
 	{
 		<tr>
 			<td>@(++count)</td>
-			<td>@movie.Name</td>
+			<td>@Html.ActionLink(@movie.Name, "Details", "Movie", new{@movie.Id},null)</td>
 		</tr>
 	}
 </table>

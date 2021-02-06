@@ -11,6 +11,9 @@ namespace Vidly.MODEL.Models
 	{
 		public byte Id { get; set; }
 		[Required]
+		[StringLength(100)]
+		public string Name { get; set; }
+		[Required]
 		public short SignUpFee { get; set; }
 		[Required]
 		public byte DurationInMonths { set; get; }

@@ -35,3 +35,6 @@ F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.Dat
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.DatabaseContext.Migrations.MemberShipTypeModelInitial.resources
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.DatabaseContext.Migrations.MembershipTypeValueAdd.resources
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.DatabaseContext.Migrations.CustomerLinkedToMembershipType.resources
+F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.DatabaseContext.Migrations.MembershipTypeModelAddNameProperty.resources
+F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.DatabaseContext.Migrations.UpdateMembershipTable.resources
+F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.DatabaseContext.Migrations.MembershipTypeModelNameRequired.resources

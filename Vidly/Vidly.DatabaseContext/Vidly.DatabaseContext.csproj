@@ -76,6 +76,18 @@
     <Compile Include="Migrations\202102061236024_CustomerLinkedToMembershipType.designer.cs">
       <DependentUpon>202102061236024_CustomerLinkedToMembershipType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102061336547_MembershipTypeModelAddNameProperty.cs" />
+    <Compile Include="Migrations\202102061336547_MembershipTypeModelAddNameProperty.designer.cs">
+      <DependentUpon>202102061336547_MembershipTypeModelAddNameProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102061338125_UpdateMembershipTable.cs" />
+    <Compile Include="Migrations\202102061338125_UpdateMembershipTable.designer.cs">
+      <DependentUpon>202102061338125_UpdateMembershipTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102061347051_MembershipTypeModelNameRequired.cs" />
+    <Compile Include="Migrations\202102061347051_MembershipTypeModelNameRequired.designer.cs">
+      <DependentUpon>202102061347051_MembershipTypeModelNameRequired.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -107,6 +119,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102061236024_CustomerLinkedToMembershipType.resx">
       <DependentUpon>202102061236024_CustomerLinkedToMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102061336547_MembershipTypeModelAddNameProperty.resx">
+      <DependentUpon>202102061336547_MembershipTypeModelAddNameProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102061338125_UpdateMembershipTable.resx">
+      <DependentUpon>202102061338125_UpdateMembershipTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102061347051_MembershipTypeModelNameRequired.resx">
+      <DependentUpon>202102061347051_MembershipTypeModelNameRequired.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

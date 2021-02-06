@@ -19,7 +19,7 @@
 		<tr>
 			<td>@(++count)</td>
 			<td>@Html.ActionLink(@customer.Name, "Details", "Customer", new { @customer.Id }, null)</td>
-			<td>@GetMembershipTypeName(customer.MembershipTypeId)</td>
+			<td>@customer.MembershipType.Name</td>
 			<td>@GetMonths(customer.MembershipType.DurationInMonths)</td>
 			<td>@customer.MembershipType.SignUpFee$</td>
 			<td>@customer.MembershipType.DiscountRate%</td>
@@ -27,29 +27,6 @@
 	}
 </table>
 
-@{
-
-	string GetMembershipTypeName(int id)
-	{
-		switch (id)
-		{
-			case 1:
-				return "Basic";
-				break;
-			case 2:
-				return "Basic Plus";
-				break;
-			case 3:
-				return "Standard";
-				break;
-			case 4:
-				return "Premium";
-				break;
-			default:
-				return "";
-		}
-	}
-}
 @{
 
 	string GetMonths(int id)

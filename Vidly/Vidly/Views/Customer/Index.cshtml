@@ -19,7 +19,7 @@
 	{
 		<tr>
 			<td>@(++count)</td>
-			<td>@Html.ActionLink(@customer.Name, "Details", "Customer", new { @customer.Id }, null)</td>
+			<td>@Html.ActionLink(@customer.Name, "Edit", "Customer", new { @customer.Id }, null)</td>
 			<td>@customer.MembershipType.Name</td>
 			<td>@GetMonths(customer.MembershipType.DurationInMonths)</td>
 			<td>@customer.MembershipType.SignUpFee$</td>

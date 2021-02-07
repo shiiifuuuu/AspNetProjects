@@ -41,15 +41,42 @@ namespace Vidly.Controllers
         public ActionResult New()
         {
 	        CustomerViewModel viewModel = new CustomerViewModel();
+	        viewModel.Heading = "Add a New Customer";
+	        viewModel.Title = "Add Customer";
             viewModel.MembershipTypes = _membershipTypeManager.GetAll();
-            return View(viewModel);
+//            return View(viewModel);
+	        return View("CustomerForm", viewModel);
         }
 
         [HttpPost]
-        public ActionResult Create(Customer newCustomer)
+        public ActionResult Save(CustomerViewModel newViewModel)
         {
-	        bool success = _customerManager.Add(newCustomer);
+	        if (newViewModel.Customer.Id == 0)
+	        {
+		        bool success = _customerManager.Add(newViewModel.Customer);
+            }
+            else
+	        {
+		        _customerManager.Update(newViewModel.Customer);
+	        }
 	        return RedirectToAction("Index", "Customer");
+        }
+
+        public ActionResult Edit(int id)
+        {
+	        CustomerViewModel viewModel = new CustomerViewModel();
+	        viewModel.Heading = "Edit/Update Existing Customer";
+	        viewModel.Title = "Edit Customer";
+	        viewModel.Customer = _customerManager.GetById(id);
+	        if (viewModel.Customer == null)
+	        {
+		        return HttpNotFound();
+            }
+	        else
+	        {
+		        viewModel.MembershipTypes = _membershipTypeManager.GetAll();
+                return View("CustomerForm", viewModel);
+            }
         }
     }
 }

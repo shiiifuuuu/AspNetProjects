@@ -23,6 +23,8 @@ namespace Vidly.DAL.Repos
 		{
 			Customer dbCustomer = _dbContext.Customers.FirstOrDefault(c => c.Id == customer.Id);
 			dbCustomer.Name = customer.Name;
+			dbCustomer.BirthDate = customer.BirthDate;
+			dbCustomer.MembershipTypeId = customer.MembershipTypeId;
 			return _dbContext.SaveChanges() > 0;
 		}
 

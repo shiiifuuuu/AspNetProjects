@@ -21,16 +21,21 @@ namespace Vidly.DAL.Repos
 
 		public bool Update(Movie movie)
 		{
-			Movie m = _dbContext.Movies.FirstOrDefault(c => c.Id == movie.Id);
-			m.Name = movie.Name;
-			m.Genre = movie.Genre;
+			Movie dbMovie = _dbContext.Movies.FirstOrDefault(c => c.Id == movie.Id);
+
+			dbMovie.Name = movie.Name;
+			dbMovie.AddedDate = movie.AddedDate;
+			dbMovie.Genre = movie.Genre;
+			dbMovie.InStock = movie.InStock;
+			dbMovie.ReleaseDate = movie.ReleaseDate;
+
 			return _dbContext.SaveChanges() > 0;
 		}
 
 		public bool Delete(int id)
 		{
-			Movie m = _dbContext.Movies.FirstOrDefault(c => c.Id == id);
-			_dbContext.Movies.Remove(m);
+			Movie dbMovie = _dbContext.Movies.FirstOrDefault(c => c.Id == id);
+			_dbContext.Movies.Remove(dbMovie);
 			return _dbContext.SaveChanges() > 0;
 		}
 

@@ -1,0 +1,47 @@
+﻿@model Vidly.Models.MovieViewModel
+@{
+	ViewBag.Title = @Model.Title;
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.Heading</h2>
+
+@using (Html.BeginForm("Save", "Movie", FormMethod.Post))
+{
+	<div class="form-group">
+		@Html.LabelFor(m => m.Movie.Name)
+		@Html.TextBoxFor(m => m.Movie.Name, new { @class = "form-control", placeholder = "movie name" })
+	</div>
+	<div class="form-group">
+		@Html.LabelFor(m => m.Movie.ReleaseDate)
+		@Html.TextBoxFor(m => m.Movie.ReleaseDate, "{0:d MMM yyyy}", new { @class = "form-control", placeholder = "dd MMM YYYY" })
+	</div>
+	<div class="form-group">
+		@Html.LabelFor(m => m.Movie.Genre)
+		@Html.TextBoxFor(m => m.Movie.Genre, new { @class = "form-control", placeholder = "action, adventure, comedy" })
+	</div>
+	<div class="form-group">
+		@Html.LabelFor(m => m.Movie.InStock)
+		@Html.TextBoxFor(m => m.Movie.InStock, new { @class = "form-control", placeholder = "currently available" })
+	</div>
+	
+	@Html.HiddenFor(m => m.Movie.Id)
+@* 	@Html.HiddenFor(m=>m.Movie.AddedDate, new{Value = CheckAddedDate(Model.Movie.AddedDate)}) *@
+	@Html.HiddenFor(m=>m.Movie.AddedDate, new{Value=DateTime.UtcNow})
+
+	<button type="submit" class="btn btn-success">Save</button>
+}
+@* @{ *@
+@* *@
+@* 	DateTime CheckAddedDate(DateTime dateTime) *@
+@* 	{ *@
+@* 		if (dateTime.Equals(null)) *@
+@* 		{ *@
+@* 			return DateTime.UtcNow; *@
+@* 		} *@
+@* 		else *@
+@* 		{ *@
+@* 			return dateTime; *@
+@* 		} *@
+@* 	} *@
+@* } *@

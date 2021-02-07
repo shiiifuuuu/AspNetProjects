@@ -1,25 +1,27 @@
 ﻿@model Vidly.Models.MovieViewModel
 @{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewBag.Title = "Index";
+	Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<table class="tableList">
-	<tr>
-		<th>Sl no.</th>
-		<th>Movie Name</th>
-		<th>Genre</th>
-	</tr>
-	@{ int count = 0;}
-	@foreach (var movie in Model.Movies)
-	{
-		<tr>
-			<td>@(++count)</td>
-			<td>
-				@Html.ActionLink(@movie.Name, "Details", "Movie", new {@movie.Id}, null)
-			</td>
-			<td>@movie.Genre</td>
+@Html.ActionLink("Add Movie", "New", "Movie", null, new{@class="btn btn-default"})
+<br/>
+<div class="table-responsive">
+	<table class="table table-bordered table-hover">
+		<tr class="success">
+			<th>Sl no.</th>
+			<th>Movie Name</th>
+			<th>Genre</th>
 		</tr>
-	}
-</table>
-
+		@{ int count = 0;}
+		@foreach (var movie in Model.Movies)
+		{
+			<tr>
+				<td>@(++count)</td>
+				<td>
+					@Html.ActionLink(@movie.Name, "Edit", "Movie", new { @movie.Id }, null)
+				</td>
+				<td>@movie.Genre</td>
+			</tr>
+		}
+	</table>
+</div>

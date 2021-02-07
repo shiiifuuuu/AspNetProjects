@@ -34,6 +34,7 @@ namespace Vidly.Controllers
 			return View("MovieForm", viewModel);
 		}
 
+		[HttpPost]
 		public ActionResult Save(MovieViewModel viewModel)
 		{
 			//ADDING MOVIE

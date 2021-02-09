@@ -3,8 +3,9 @@
 	ViewBag.Title = "Index";
 	Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@Html.ActionLink("Add Movie", "New", "Movie", null, new{@class="btn btn-default"})
-<br/>
+	<div class="text-center">
+		@Html.ActionLink("Add a Movie", "New", "Movie", null, new { @class = "btn btn-default btn-block mt-2 mb-1 custom-width" })
+	</div>
 <div class="table-responsive">
 	<table class="table table-bordered table-hover">
 		<tr class="success">

@@ -3,7 +3,9 @@
 	ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@Html.ActionLink("Add a Customer", "New", "Customer",null,new{@class="btn btn-default"})
+<div class="text-center">
+	@Html.ActionLink("Add a Customer", "New", "Customer", null, new { @class = "btn btn-default btn-block mt-2 mb-1 custom-width"})
+</div>
 <div class="table-responsive">
 	<table class="table table-hover table-bordered">
 		<tr class="success">

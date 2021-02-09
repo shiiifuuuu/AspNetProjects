@@ -45,3 +45,5 @@ F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.Dat
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.DatabaseContext.Migrations.MovieModelUpdate1.resources
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.DatabaseContext.Migrations.MovieModelUpdate2.resources
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.DatabaseContext.Migrations.CustomerModelPropertyDoBChangedToBirthDate.resources
+F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.DatabaseContext.Migrations.MovieModelDateTimeToDateOnly.resources
+F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.DatabaseContext.Migrations.CustomerModelBirthdateTypeDate.resources

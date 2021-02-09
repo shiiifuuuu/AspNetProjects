@@ -116,6 +116,14 @@
     <Compile Include="Migrations\202102062159420_CustomerModelPropertyDoBChangedToBirthDate.designer.cs">
       <DependentUpon>202102062159420_CustomerModelPropertyDoBChangedToBirthDate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102071556214_MovieModelDateTimeToDateOnly.cs" />
+    <Compile Include="Migrations\202102071556214_MovieModelDateTimeToDateOnly.designer.cs">
+      <DependentUpon>202102071556214_MovieModelDateTimeToDateOnly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102071600268_CustomerModelBirthdateTypeDate.cs" />
+    <Compile Include="Migrations\202102071600268_CustomerModelBirthdateTypeDate.designer.cs">
+      <DependentUpon>202102071600268_CustomerModelBirthdateTypeDate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -177,6 +185,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102062159420_CustomerModelPropertyDoBChangedToBirthDate.resx">
       <DependentUpon>202102062159420_CustomerModelPropertyDoBChangedToBirthDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102071556214_MovieModelDateTimeToDateOnly.resx">
+      <DependentUpon>202102071556214_MovieModelDateTimeToDateOnly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102071600268_CustomerModelBirthdateTypeDate.resx">
+      <DependentUpon>202102071600268_CustomerModelBirthdateTypeDate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

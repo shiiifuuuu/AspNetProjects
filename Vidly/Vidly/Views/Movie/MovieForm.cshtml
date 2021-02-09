@@ -10,7 +10,7 @@
 {
 	<div class="form-group">
 		@Html.LabelFor(m => m.Movie.Name)
-		@Html.TextBoxFor(m => m.Movie.Name, new { @class = "form-control", placeholder = "movie name" })
+		@Html.TextBoxFor(m => m.Movie.Name, new { @class = "form-control width-5", placeholder = "movie name"})
 	</div>
 	<div class="form-group">
 		@Html.LabelFor(m => m.Movie.ReleaseDate)
@@ -26,22 +26,7 @@
 	</div>
 	
 	@Html.HiddenFor(m => m.Movie.Id)
-@* 	@Html.HiddenFor(m=>m.Movie.AddedDate, new{Value = CheckAddedDate(Model.Movie.AddedDate)}) *@
 	@Html.HiddenFor(m=>m.Movie.AddedDate, new{Value=DateTime.UtcNow})
 
-	<button type="submit" class="btn btn-success">Save</button>
+	<button type="submit" class="btn btn-success btn-block custom-width">Save</button>
 }
-@* @{ *@
-@* *@
-@* 	DateTime CheckAddedDate(DateTime dateTime) *@
-@* 	{ *@
-@* 		if (dateTime.Equals(null)) *@
-@* 		{ *@
-@* 			return DateTime.UtcNow; *@
-@* 		} *@
-@* 		else *@
-@* 		{ *@
-@* 			return dateTime; *@
-@* 		} *@
-@* 	} *@
-@* } *@

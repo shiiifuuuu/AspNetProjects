@@ -40,17 +40,29 @@ namespace Vidly.Controllers
 
         public ActionResult New()
         {
-	        CustomerViewModel viewModel = new CustomerViewModel();
+	        CustomerViewModel viewModel = new CustomerViewModel()
+	        {
+				Customer = new Customer()
+	        };
 	        viewModel.Heading = "Add a New Customer";
 	        viewModel.Title = "Add Customer";
             viewModel.MembershipTypes = _membershipTypeManager.GetAll();
-//            return View(viewModel);
+//          return View(viewModel);
 	        return View("CustomerForm", viewModel);
         }
 
         [HttpPost]
         public ActionResult Save(CustomerViewModel newViewModel)
         {
+	        if (!ModelState.IsValid)
+	        {
+				CustomerViewModel viewModel = new CustomerViewModel();
+				viewModel.MembershipTypes = _membershipTypeManager.GetAll();
+				viewModel.Title = "Add Customer";
+				viewModel.Heading = "Add a New Customer";
+
+		        return View("CustomerForm", viewModel);
+	        }
 	        if (newViewModel.Customer.Id == 0)
 	        {
 		        bool success = _customerManager.Add(newViewModel.Customer);

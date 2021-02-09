@@ -11,12 +11,10 @@ namespace Vidly.Models
 	{
 		public Customer Customer { get; set; }
 
+		//Views
 		public bool IsSubscribeToNewsLetter { get; set; }
-
 		public List<Customer> Customers { set; get; }
-
 		public IEnumerable<MembershipType> MembershipTypes { set; get; }
-
 		public string Heading { get; set; }
 		public string Title { get; set; }
 	}

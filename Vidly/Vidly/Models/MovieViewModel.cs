@@ -8,6 +8,10 @@ namespace Vidly.Models
 {
 	public class MovieViewModel
 	{
+//		public MovieViewModel()
+//		{
+//			Movie = new Movie();
+//		}
 		public Movie Movie { get; set; }
 		public List<Movie> Movies { get; set; }
 

@@ -42,44 +42,42 @@ namespace Vidly.Controllers
         {
 	        CustomerViewModel viewModel = new CustomerViewModel()
 	        {
-				Customer = new Customer()
-	        };
-	        viewModel.Heading = "Add a New Customer";
-	        viewModel.Title = "Add Customer";
-            viewModel.MembershipTypes = _membershipTypeManager.GetAll();
+		        Heading = "Add a New Customer",
+				Title = "Add Customer",
+				MembershipTypes = _membershipTypeManager.GetAll()
+			};
 //          return View(viewModel);
 	        return View("CustomerForm", viewModel);
         }
 
         [HttpPost]
-        public ActionResult Save(CustomerViewModel newViewModel)
+        [ValidateAntiForgeryToken]
+        public ActionResult Save(CustomerViewModel viewModel)
         {
 	        if (!ModelState.IsValid)
 	        {
-				CustomerViewModel viewModel = new CustomerViewModel();
-				viewModel.MembershipTypes = _membershipTypeManager.GetAll();
-				viewModel.Title = "Add Customer";
-				viewModel.Heading = "Add a New Customer";
-
+		        viewModel.MembershipTypes = _membershipTypeManager.GetAll();
 		        return View("CustomerForm", viewModel);
 	        }
-	        if (newViewModel.Customer.Id == 0)
+	        if (viewModel.Customer.Id == 0)
 	        {
-		        bool success = _customerManager.Add(newViewModel.Customer);
+		        bool success = _customerManager.Add(viewModel.Customer);
             }
             else
 	        {
-		        _customerManager.Update(newViewModel.Customer);
+		        _customerManager.Update(viewModel.Customer);
 	        }
 	        return RedirectToAction("Index", "Customer");
         }
 
         public ActionResult Edit(int id)
         {
-	        CustomerViewModel viewModel = new CustomerViewModel();
-	        viewModel.Heading = "Edit/Update Existing Customer";
-	        viewModel.Title = "Edit Customer";
-	        viewModel.Customer = _customerManager.GetById(id);
+	        CustomerViewModel viewModel = new CustomerViewModel()
+	        {
+		        Heading = "Edit/Update Existing Customer",
+		        Title = "Edit Customer",
+		        Customer = _customerManager.GetById(id)
+			};
 	        if (viewModel.Customer == null)
 	        {
 		        return HttpNotFound();

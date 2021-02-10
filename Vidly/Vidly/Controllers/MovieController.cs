@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Web.Mvc;
 using Vidly.BLL.Managers;
 using Vidly.MODEL.Models;
@@ -14,8 +15,7 @@ namespace Vidly.Controllers
 		{
 			List<Movie> movies = _movieManager.GetAll();
 
-			MovieViewModel viewModel = new MovieViewModel();
-			viewModel.Movies = movies;
+			MovieViewModel viewModel = new MovieViewModel() {Movies = movies};
 
 			return View(viewModel);
 		}
@@ -28,15 +28,23 @@ namespace Vidly.Controllers
 
 		public ActionResult New()
 		{
-			MovieViewModel viewModel = new MovieViewModel();
-			viewModel.Title = "Add Movie";
-			viewModel.Heading = "Add a new Movie";
+			MovieViewModel viewModel = new MovieViewModel()
+			{
+				Title = "Add Movie", 
+				Heading = "Add a new Movie",
+			};
+
 			return View("MovieForm", viewModel);
 		}
 
 		[HttpPost]
+		[ValidateAntiForgeryToken]
 		public ActionResult Save(MovieViewModel viewModel)
 		{
+			if (!ModelState.IsValid)
+			{
+				return View("MovieForm", viewModel);
+			}
 			//ADDING MOVIE
 			if (viewModel.Movie.Id == 0)
 			{
@@ -53,11 +61,12 @@ namespace Vidly.Controllers
 		public ActionResult Edit(int id)
 		{
 			Movie dbMovie = _movieManager.GetById(id);
-			MovieViewModel viewModel = new MovieViewModel();
-			
-			viewModel.Movie = dbMovie;
-			viewModel.Title = "Edit Movie";
-			viewModel.Heading = "Edit/Update this Movie";
+			MovieViewModel viewModel = new MovieViewModel()
+			{
+				Movie = dbMovie,
+				Title = "Edit Movie",
+				Heading = "Edit/Update this Movie"
+		};
 
 			return View("MovieForm", viewModel);
 		}

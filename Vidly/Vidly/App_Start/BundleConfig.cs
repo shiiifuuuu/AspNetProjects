@@ -22,7 +22,9 @@ namespace Vidly
 			bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
 					  "~/Scripts/bootstrap.js"));
 
-			bundles.Add(new ScriptBundle("~/bundles/my-vanilla-js").Include("~/Scripts/my-vanilla-js/customerFormValidation.js"));
+//			bundles.Add(new ScriptBundle("~/bundles/my-vanilla-js").Include(
+//				"~/Scripts/my-vanilla-js/customer-validation.js",
+//				"~/Scripts/my-vanilla-js/customer-delete.js"));
 
 			bundles.Add(new StyleBundle("~/Content/css").Include(
 					  "~/Content/bootstrap-darkly.css",

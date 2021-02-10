@@ -30,3 +30,11 @@
 .input-validation-error{
     border: 2px solid red;
 }
+.img-rounded {
+    //display: block;
+    //margin: 0 auto;
+    height: 20px;
+    &:hover{
+        cursor:pointer;
+    }
+}

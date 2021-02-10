@@ -31,13 +31,14 @@
 	</div>
 
 	@Html.HiddenFor(m => m.Customer.Id);
+	@Html.AntiForgeryToken()
 	<button type="submit" class="btn btn-success btn-block custom-width">Save</button>
 }
 
 @section scripts
 {
 	@Scripts.Render("~/bundles/jqueryval")
-	@Scripts.Render("~/bundles/my-vanilla-js")
+	@Scripts.Render("~/Scripts/my-vanilla-js/customer-validation.js")
 }
 
 

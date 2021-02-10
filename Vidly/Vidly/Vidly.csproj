@@ -153,6 +153,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Img\btn-delete.svg" />
     <Content Include="Content\MyStyle.css" />
     <Content Include="Content\MyStyle.min.css">
       <DependentUpon>MyStyle.css</DependentUpon>
@@ -179,7 +180,8 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Scripts\my-vanilla-js\customerFormValidation.js" />
+    <Content Include="Scripts\my-vanilla-js\customer-validation.js" />
+    <Content Include="Scripts\my-vanilla-js\customer-delete.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

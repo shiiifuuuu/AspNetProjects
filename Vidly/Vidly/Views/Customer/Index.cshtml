@@ -7,7 +7,7 @@
 	@Html.ActionLink("Add a Customer", "New", "Customer", null, new { @class = "btn btn-default btn-block mt-2 mb-1 custom-width"})
 </div>
 <div class="table-responsive">
-	<table class="table table-hover table-bordered">
+	<table class="table table-hover">
 		<tr class="success">
 			<th>Sl no.</th>
 			<th>Customers</th>
@@ -15,6 +15,7 @@
 			<th>Duration</th>
 			<th>Cost</th>
 			<th>Discount %</th>
+			<th>###</th>
 		</tr>
 		@{ int count = 0;}
 		@foreach (var customer in Model.Customers)
@@ -26,6 +27,7 @@
 				<td>@GetMonths(customer.MembershipType.DurationInMonths)</td>
 				<td>@customer.MembershipType.SignUpFee$</td>
 				<td>@customer.MembershipType.DiscountRate%</td>
+				<td id="delete-customer"><img src="~/Content/Img/btn-delete.svg" alt="..." class="img-rounded"></td>
 			</tr>
 		}
 	</table>
@@ -44,5 +46,10 @@
 			default: return $"{id} Months";
 		}
 	}
+}
+
+@section scripts
+{
+	@Scripts.Render("~/Scripts/my-vanilla-js/customer-delete.js")
 }
 

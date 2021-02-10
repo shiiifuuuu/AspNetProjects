@@ -45,3 +45,8 @@
 
 .input-validation-error {
   border: 2px solid red; }
+
+.img-rounded {
+  height: 20px; }
+  .img-rounded:hover {
+    cursor: pointer; }

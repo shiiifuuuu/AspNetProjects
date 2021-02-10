@@ -9,6 +9,10 @@ namespace Vidly.Models
 {
 	public class CustomerViewModel
 	{
+		public CustomerViewModel()
+		{
+			Customer = new Customer();
+		}
 		public Customer Customer { get; set; }
 
 		//Views

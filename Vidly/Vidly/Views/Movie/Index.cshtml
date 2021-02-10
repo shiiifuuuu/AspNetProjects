@@ -7,11 +7,12 @@
 		@Html.ActionLink("Add a Movie", "New", "Movie", null, new { @class = "btn btn-default btn-block mt-2 mb-1 custom-width" })
 	</div>
 <div class="table-responsive">
-	<table class="table table-bordered table-hover">
+	<table class="table table-hover">
 		<tr class="success">
 			<th>Sl no.</th>
 			<th>Movie Name</th>
 			<th>Genre</th>
+			<th>###</th>
 		</tr>
 		@{ int count = 0;}
 		@foreach (var movie in Model.Movies)
@@ -22,6 +23,7 @@
 					@Html.ActionLink(@movie.Name, "Edit", "Movie", new { @movie.Id }, null)
 				</td>
 				<td>@movie.Genre</td>
+				<td id="delete-movie"><img src="~/Content/Img/btn-delete.svg" class="img-rounded"/></td>
 			</tr>
 		}
 	</table>

@@ -16,12 +16,7 @@ namespace Vidly.Controllers
 
         // GET: Customer
         public ActionResult Index()
-        { 
-//	        CustomerViewModel viewModel = new CustomerViewModel()
-//            {
-//	            Customers = _customerManager.GetAll()
-//			};
-//	        return View(viewModel);
+        {
 	        return View();
         }
 

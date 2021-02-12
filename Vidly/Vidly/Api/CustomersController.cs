@@ -81,7 +81,10 @@ namespace Vidly.Controllers.Api
 			var response = _customerManager.Delete(id);
 			if (response)
 			{
-				return Ok();
+				return Ok(new
+				{
+					message="200"
+				});
 			}
 			else
 			{

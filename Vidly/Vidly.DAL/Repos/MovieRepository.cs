@@ -48,5 +48,10 @@ namespace Vidly.DAL.Repos
 		{
 			return _dbContext.Movies.FirstOrDefault(m => m.Id == id);
 		}
+
+		public List<Genre> GetAllGenre()
+		{
+			return _dbContext.Genres.ToList();
+		}
 	}
 }

@@ -16,13 +16,12 @@ namespace Vidly.Controllers
 
         // GET: Customer
         public ActionResult Index()
-        {
-	        List<Customer> customers = _customerManager.GetAll();
-            CustomerViewModel viewModel = new CustomerViewModel();
-            
-            viewModel.Customers = customers;
-
-            return View(viewModel);
+        { 
+	        CustomerViewModel viewModel = new CustomerViewModel()
+            {
+	            Customers = _customerManager.GetAll()
+			};
+	        return View(viewModel);
         }
 
         public ActionResult Details(int id)
@@ -88,5 +87,18 @@ namespace Vidly.Controllers
                 return View("CustomerForm", viewModel);
             }
         }
-    }
+
+        public JsonResult GetAll()
+        {
+	        var aList = _customerManager.GetAll();
+
+	        return Json(aList, JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult Delete(int id)
+		{
+			bool res = _customerManager.Delete(id);
+			return Json("", JsonRequestBehavior.AllowGet);
+		}
+	}
 }

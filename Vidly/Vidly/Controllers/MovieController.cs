@@ -15,7 +15,7 @@ namespace Vidly.Controllers
 		{
 			List<Movie> movies = _movieManager.GetAll();
 
-			MovieViewModel viewModel = new MovieViewModel() {Movies = movies};
+			MovieViewModel viewModel = new MovieViewModel() {MovieList = movies};
 
 			return View(viewModel);
 		}
@@ -32,6 +32,7 @@ namespace Vidly.Controllers
 			{
 				Title = "Add Movie", 
 				Heading = "Add a new Movie",
+				GenreList = _movieManager.GetAllGenre()
 			};
 
 			return View("MovieForm", viewModel);
@@ -70,5 +71,6 @@ namespace Vidly.Controllers
 
 			return View("MovieForm", viewModel);
 		}
+
 	}
 }

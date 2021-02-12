@@ -36,5 +36,9 @@ namespace Vidly.BLL.Managers
 		{
 			return _movieRepository.GetById(id);
 		}
+		public List<Genre> GetAllGenre()
+		{
+			return _movieRepository.GetAllGenre();
+		}
 	}
 }

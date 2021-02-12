@@ -136,6 +136,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Api\CustomersController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MovieController.cs" />
@@ -358,6 +360,7 @@
     <Content Include="Scripts\my-vanilla-js\customer-validation.js" />
     <Content Include="Scripts\my-vanilla-js\customer-delete.js" />
     <Content Include="Scripts\my-vanilla-js\movie-genre-list.js" />
+    <Content Include="Scripts\my-vanilla-js\RestApi.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -401,6 +404,10 @@
     <ProjectReference Include="..\Vidly.BLL\Vidly.BLL.csproj">
       <Project>{e59a4e50-4bfe-4753-b72f-854912db8a56}</Project>
       <Name>Vidly.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vidly.DatabaseContext\Vidly.DatabaseContext.csproj">
+      <Project>{C186CB95-B33E-4452-A9DA-5F686941C9A0}</Project>
+      <Name>Vidly.DatabaseContext</Name>
     </ProjectReference>
     <ProjectReference Include="..\Vidly.MODEL\Vidly.MODEL.csproj">
       <Project>{275214e8-8d2a-4f47-8e85-f786ec66df12}</Project>

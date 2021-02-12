@@ -88,12 +88,6 @@ namespace Vidly.Controllers
             }
         }
 
-        public JsonResult GetAll()
-        {
-	        var aList = _customerManager.GetAll();
-
-	        return Json(aList, JsonRequestBehavior.AllowGet);
-        }
 
         public JsonResult Delete(int id)
 		{

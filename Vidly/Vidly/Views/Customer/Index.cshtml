@@ -1,40 +1,40 @@
 ﻿@model Vidly.Models.CustomerViewModel
 @{
 	ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+	Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div class="text-center">
-	@Html.ActionLink("Add a Customer", "New", "Customer", null, new { @class = "btn btn-default btn-block mt-2 mb-1 custom-width"})
+	@Html.ActionLink("Add a Customer", "New", "Customer", null, new { @class = "btn btn-default btn-block mt-2 mb-1 custom-width" })
 </div>
 <div id="customer" class="table-responsive">
 	<table class="table table-hover">
 		<thead>
-		<tr class="success">
-			<th>Sl no.</th>
-			<th>Customers</th>
-			<th>Membership</th>
-			<th>Duration</th>
-			<th>Cost</th>
-			<th>Discount %</th>
-			<th>###</th>
-		</tr>
+			<tr class="success">
+				<th>Sl no.</th>
+				<th>Customers</th>
+				<th>Membership</th>
+				<th>Duration</th>
+				<th>Cost</th>
+				<th>Discount %</th>
+				<th>###</th>
+			</tr>
 		</thead>
 		<tbody>
-		@{ int count = 0;}
-		@foreach (var customer in Model.Customers)
-		{
-			<tr>
-				<td>@(++count)</td>
-				<td>@Html.ActionLink(@customer.Name, "Edit", "Customer", new { @customer.Id }, null)</td>
-				<td>@customer.MembershipType.Name</td>
-				<td>@GetMonths(customer.MembershipType.DurationInMonths)</td>
-				<td>@customer.MembershipType.SignUpFee$</td>
-				<td>@customer.MembershipType.DiscountRate%</td>
-				<td>
-					<img src="~/Content/Img/btn-delete.svg" alt="..." class="img-rounded js-delete" data-customer-id="@customer.Id">
-				</td>
-			</tr>
-		}
+			@{ int count = 0;}
+			@foreach (var customer in Model.Customers)
+			{
+				<tr>
+					<td>@(++count)</td>
+					<td>@Html.ActionLink(@customer.Name, "Edit", "Customer", new { @customer.Id }, null)</td>
+					<td>@customer.MembershipType.Name</td>
+					<td>@GetMonths(customer.MembershipType.DurationInMonths)</td>
+					<td>@customer.MembershipType.SignUpFee$</td>
+					<td>@customer.MembershipType.DiscountRate%</td>
+					<td>
+						<img src="~/Content/Img/btn-delete.svg" alt="..." class="img-rounded js-delete" data-customer-id="@customer.Id">
+					</td>
+				</tr>
+			}
 		</tbody>
 	</table>
 </div>
@@ -56,6 +56,7 @@
 
 @section scripts
 {
+	@Scripts.Render("~/Scripts/my-vanilla-js/RestApi.js")
 	@Scripts.Render("~/Scripts/my-vanilla-js/customer-delete.js")
 }
 

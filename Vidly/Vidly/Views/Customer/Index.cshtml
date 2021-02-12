@@ -1,4 +1,4 @@
-﻿@model Vidly.Models.CustomerViewModel
+﻿@* @model Vidly.Models.CustomerViewModel *@
 @{
 	ViewBag.Title = "Index";
 	Layout = "~/Views/Shared/_Layout.cshtml";
@@ -19,44 +19,30 @@
 				<th>###</th>
 			</tr>
 		</thead>
-		<tbody>
-			@{ int count = 0;}
-			@foreach (var customer in Model.Customers)
-			{
-				<tr>
-					<td>@(++count)</td>
-					<td>@Html.ActionLink(@customer.Name, "Edit", "Customer", new { @customer.Id }, null)</td>
-					<td>@customer.MembershipType.Name</td>
-					<td>@GetMonths(customer.MembershipType.DurationInMonths)</td>
-					<td>@customer.MembershipType.SignUpFee$</td>
-					<td>@customer.MembershipType.DiscountRate%</td>
-					<td>
-						<img src="~/Content/Img/btn-delete.svg" alt="..." class="img-rounded js-delete" data-customer-id="@customer.Id">
-					</td>
-				</tr>
-			}
-		</tbody>
 	</table>
 </div>
 
-@{
-
-	string GetMonths(int id)
-	{
-		switch (id)
-		{
-			case 0:
-				return "Pay as you go";
-			case 1:
-				return $"{id} Month";
-			default: return $"{id} Months";
-		}
-	}
-}
 
 @section scripts
 {
-	@Scripts.Render("~/Scripts/my-vanilla-js/RestApi.js")
-	@Scripts.Render("~/Scripts/my-vanilla-js/customer-delete.js")
+	@Scripts.Render("~/Scripts/my-vanilla-js/customer-index.js")
 }
 
+
+@* 			<tbody class="table-body"> *@
+@* 				@{ int count = 0;} *@
+@* 				@foreach (var customer in Model.Customers) *@
+@* 				{ *@
+@* 					<tr> *@
+@* 						<td>@(++count)</td> *@
+@* 						<td>@Html.ActionLink(@customer.Name, "Edit", "Customer", new { @customer.Id }, null)</td> *@
+@* 						<td>@customer.MembershipType.Name</td> *@
+@* 						<td>@GetMonths(customer.MembershipType.DurationInMonths)</td> *@
+@* 						<td>@customer.MembershipType.SignUpFee$</td> *@
+@* 						<td>@customer.MembershipType.DiscountRate%</td> *@
+@* 						<td> *@
+@* 							<img src="~/Content/Img/btn-delete.svg" alt="..." class="img-rounded js-delete" data-customer-id="@customer.Id"> *@
+@* 						</td> *@
+@* 					</tr> *@
+@* 				} *@
+@* 			</tbody> *@

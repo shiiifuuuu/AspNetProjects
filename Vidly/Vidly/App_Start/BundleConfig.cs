@@ -25,6 +25,8 @@ namespace Vidly
 					  "~/Scripts/bootstrap.js",
 					  "~/Scripts/bootbox.js"));
 
+			bundles.Add(new ScriptBundle("~/bundles/api").Include("~/Scripts/Api/rest-http.js"));
+
 //			bundles.Add(new ScriptBundle("~/bundles/my-vanilla-js").Include(
 //				"~/Scripts/my-vanilla-js/customer-validation.js",
 //				"~/Scripts/my-vanilla-js/customer-delete.js"));

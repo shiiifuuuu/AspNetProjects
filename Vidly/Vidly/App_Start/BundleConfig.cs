@@ -32,7 +32,7 @@ namespace Vidly
 //				"~/Scripts/my-vanilla-js/customer-delete.js"));
 
 			bundles.Add(new StyleBundle("~/Content/css").Include(
-					  "~/Content/bootstrap-darkly.css",
+					  "~/Content/bootstrap3-journal.css",
 					  "~/Content/Site.css",
 					  "~/Content/MyStyle.css",
 					  "~/Content/DataTables/css/dataTables.bootstrap.css"));

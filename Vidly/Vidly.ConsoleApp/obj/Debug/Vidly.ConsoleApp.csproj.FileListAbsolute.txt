@@ -30,6 +30,7 @@ F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.ConsoleApp\bin\Debug\Vidly.DAL.dll
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.ConsoleApp\bin\Debug\Vidly.DatabaseContext.dll
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.ConsoleApp\bin\Debug\Vidly.BLL.pdb
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.ConsoleApp\bin\Debug\Vidly.MODEL.pdb
+F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.ConsoleApp\bin\Debug\Vidly.MODEL.dll.config
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.ConsoleApp\bin\Debug\EntityFramework.xml
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.ConsoleApp\bin\Debug\EntityFramework.SqlServer.xml
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.ConsoleApp\bin\Debug\Vidly.DAL.pdb
@@ -40,4 +41,3 @@ F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.ConsoleApp\obj\Debug\Vidly.ConsoleA
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.ConsoleApp\obj\Debug\Vidly.ConsoleApp.csproj.CopyComplete
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.ConsoleApp\obj\Debug\Vidly.ConsoleApp.exe
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.ConsoleApp\obj\Debug\Vidly.ConsoleApp.pdb
-F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.ConsoleApp\bin\Debug\Vidly.MODEL.dll.config

@@ -24,11 +24,16 @@
     max-width:280px !important;
 }
 
-.field-validation-error{
-    color:red;
+.field-validation-error {
+    color: #c53c39;
 }
-.input-validation-error{
-    border: 2px solid red;
+.input-validation-error {
+    border: 2px solid #ff7b79;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+
+    &:focus {
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+    }
 }
 .img-rounded {
     //display: block;

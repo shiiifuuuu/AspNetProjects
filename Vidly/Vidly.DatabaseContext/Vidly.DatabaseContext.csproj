@@ -132,6 +132,10 @@
     <Compile Include="Migrations\202102101654588_GenreDataAdd.designer.cs">
       <DependentUpon>202102101654588_GenreDataAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102171606026_SeedUsers.cs" />
+    <Compile Include="Migrations\202102171606026_SeedUsers.designer.cs">
+      <DependentUpon>202102171606026_SeedUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -205,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102101654588_GenreDataAdd.resx">
       <DependentUpon>202102101654588_GenreDataAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102171606026_SeedUsers.resx">
+      <DependentUpon>202102171606026_SeedUsers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

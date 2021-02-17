@@ -3,10 +3,8 @@
 	ViewBag.Title = "Index";
 	Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div class="text-center">
-	@Html.ActionLink("Add a Customer", "New", "Customer", null, new { @class = "btn btn-success btn-block mt-2 mb-1 custom-width" })
-</div>
-<div id="customer" class="table-responsive">
+
+<div id="customer" class="table-responsive pt-1 mb-2">
 	<table class="table table-hover">
 		<thead>
 			<tr class="warning">
@@ -21,8 +19,9 @@
 		</thead>
 	</table>
 </div>
-
-
+<div class="text-right">
+	@Html.ActionLink("Add a Customer", "New", "Customer", null, new { @class = "btn btn-success btn-lg" })
+</div>
 @section scripts
 {
 	@Scripts.Render("~/Scripts/my-vanilla-js/customer-index.js")

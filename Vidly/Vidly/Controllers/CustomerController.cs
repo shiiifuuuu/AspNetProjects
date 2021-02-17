@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
+using Microsoft.AspNet.Identity;
 using Vidly.BLL.Managers;
 using Vidly.MODEL.Models;
 using Vidly.Models;
@@ -14,26 +16,21 @@ namespace Vidly.Controllers
         CustomerManager _customerManager = new CustomerManager();
         MembershipTypeManager _membershipTypeManager = new MembershipTypeManager();
 
-        // GET: Customer
         public ActionResult Index()
         {
-	        return View();
-        }
-
-        public ActionResult Details(int id)
-        {
-	        Customer dbCustomer = _customerManager.GetById(id);
-	        if (dbCustomer != null)
+	        if (User.IsInRole(RoleName.CanManageCustomers))
 	        {
-		        return View(dbCustomer);
-	        }
+		        return View();
+			}
 	        else
 	        {
-		        return HttpNotFound();
-	        }
+		        return View("IndexReadOnly");
+			}
         }
 
-        public ActionResult New()
+		//Customer CREATE
+		[Authorize(Roles = RoleName.CanManageCustomers)]
+		public ActionResult New()
         {
 	        CustomerViewModel viewModel = new CustomerViewModel()
 	        {
@@ -45,27 +42,9 @@ namespace Vidly.Controllers
 	        return View("CustomerForm", viewModel);
         }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Save(CustomerViewModel viewModel)
-        {
-	        if (!ModelState.IsValid)
-	        {
-		        viewModel.MembershipTypes = _membershipTypeManager.GetAll();
-		        return View("CustomerForm", viewModel);
-	        }
-	        if (viewModel.Customer.Id == 0)
-	        {
-		        bool success = _customerManager.Add(viewModel.Customer);
-            }
-            else
-	        {
-		        _customerManager.Update(viewModel.Customer);
-	        }
-	        return RedirectToAction("Index", "Customer");
-        }
-
-        public ActionResult Edit(int id)
+		//Customer EDIT
+		[Authorize(Roles = RoleName.CanManageCustomers)]
+		public ActionResult Edit(int id)
         {
 	        CustomerViewModel viewModel = new CustomerViewModel()
 	        {
@@ -84,10 +63,44 @@ namespace Vidly.Controllers
             }
         }
 
-//        public JsonResult Delete(int id)
-//		{
-//			bool res = _customerManager.Delete(id);
-//			return Json("", JsonRequestBehavior.AllowGet);
-//		}
+		//Action: POST - Customer Create/ Update
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Save(CustomerViewModel viewModel)
+        {
+	        if (!ModelState.IsValid)
+	        {
+		        viewModel.MembershipTypes = _membershipTypeManager.GetAll();
+		        return View("CustomerForm", viewModel);
+	        }
+	        if (viewModel.Customer.Id == 0)
+	        {
+		        bool success = _customerManager.Add(viewModel.Customer);
+	        }
+	        else
+	        {
+		        _customerManager.Update(viewModel.Customer);
+	        }
+	        return RedirectToAction("Index", "Customer");
+        }
+
+        public ActionResult Details(int id)
+        {
+	        Customer dbCustomer = _customerManager.GetById(id);
+	        if (dbCustomer != null)
+	        {
+		        return View(dbCustomer);
+	        }
+	        else
+	        {
+		        return HttpNotFound();
+	        }
+        }
+
+		//        public JsonResult Delete(int id)
+		//		{
+		//			bool res = _customerManager.Delete(id);
+		//			return Json("", JsonRequestBehavior.AllowGet);
+		//		}
 	}
 }

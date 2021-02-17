@@ -19,6 +19,13 @@
     &r-1{margin-right: 1rem;}
     &r-2{margin-right: 2rem;}
 }
+.p{
+    &t-1{padding-top:1rem;}
+    &t-2{padding-top:2rem;}
+
+    &b-1{padding-bottom:1rem;}
+    &b-2{padding-bottom:2rem;}
+}
 
 .custom-width{
     max-width:280px !important;
@@ -42,4 +49,8 @@
     &:hover{
         cursor:pointer;
     }
+}
+.btn:focus{
+    outline:none;
+    border:none;
 }

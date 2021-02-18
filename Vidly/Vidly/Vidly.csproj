@@ -190,7 +190,6 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CustomerViewModel.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MovieViewModel.cs" />
     <Compile Include="Models\RoleName.cs" />
@@ -465,6 +464,10 @@
     <ProjectReference Include="..\Vidly.BLL\Vidly.BLL.csproj">
       <Project>{e59a4e50-4bfe-4753-b72f-854912db8a56}</Project>
       <Name>Vidly.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vidly.DatabaseContext\Vidly.DatabaseContext.csproj">
+      <Project>{c186cb95-b33e-4452-a9da-5f686941c9a0}</Project>
+      <Name>Vidly.DatabaseContext</Name>
     </ProjectReference>
     <ProjectReference Include="..\Vidly.MODEL\Vidly.MODEL.csproj">
       <Project>{275214e8-8d2a-4f47-8e85-f786ec66df12}</Project>

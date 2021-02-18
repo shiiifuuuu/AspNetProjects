@@ -3,11 +3,11 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class SeedUsers : DbMigration
+    public partial class SeedUser : DbMigration
     {
         public override void Up()
         {
-            Sql(@"
+	        Sql(@"
 			INSERT [dbo].[AspNetRoles] ([Id], [Name]) VALUES (N'd1fc0b7b-5320-46d5-8a15-73fa4acc4c95', N'CanManageCustomers')
 
 			INSERT [dbo].[AspNetUsers] ([Id], [Email], [EmailConfirmed], [PasswordHash], [SecurityStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEndDateUtc], [LockoutEnabled], [AccessFailedCount], [UserName]) VALUES (N'08b5fc3c-f6cc-4d50-ab80-90fc33a27fd8', N'guest@email.com', 0, N'ALwLYJ/IK67GacDiLwwMTh3KbD+R8O/KqzeO727/UgGO/okXdHnJ4gRgbkiUlRxtGw==', N'f858a8dd-9d10-491e-b2ed-0c9c681ee5cb', NULL, 0, 0, NULL, 1, 0, N'guest@email.com')

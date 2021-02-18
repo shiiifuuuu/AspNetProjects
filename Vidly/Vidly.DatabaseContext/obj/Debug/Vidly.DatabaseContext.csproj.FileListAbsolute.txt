@@ -19,11 +19,15 @@ F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\bin\Debug\Vidly.Dat
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\bin\Debug\Vidly.DatabaseContext.pdb
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\bin\Debug\EntityFramework.dll
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\bin\Debug\EntityFramework.SqlServer.dll
+F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\bin\Debug\Vidly.MODEL.dll
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\bin\Debug\Vidly.MODEL.pdb
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\bin\Debug\Vidly.MODEL.dll.config
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\bin\Debug\EntityFramework.xml
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\bin\Debug\EntityFramework.SqlServer.xml
+F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.DatabaseContext.csprojAssemblyReference.cache
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.DatabaseContext.Migrations.InitialModelMovie.resources
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.DatabaseContext.Migrations.InitialCustomerModelAdd.resources
@@ -45,8 +49,9 @@ F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.Dat
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.DatabaseContext.Migrations.CustomerModelBirthdateTypeDate.resources
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.DatabaseContext.Migrations.MovieGenreModelDB.resources
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.DatabaseContext.Migrations.GenreDataAdd.resources
-F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.DatabaseContext.Migrations.SeedUsers.resources
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.DatabaseContext.csproj.GenerateResource.cache
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.DatabaseContext.csproj.CopyComplete
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.DatabaseContext.dll
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.DatabaseContext.pdb
+F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.DatabaseContext.Migrations.IdentityModelSeperate.resources
+F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.DatabaseContext\obj\Debug\Vidly.DatabaseContext.Migrations.SeedUser.resources

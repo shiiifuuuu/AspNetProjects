@@ -20,6 +20,8 @@ F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.BLL\bin\Debug\Vidly.DAL.dll
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.BLL\bin\Debug\Vidly.MODEL.dll
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.BLL\bin\Debug\Vidly.DatabaseContext.dll
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.BLL\bin\Debug\EntityFramework.dll
+F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.BLL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.BLL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.BLL\bin\Debug\Vidly.DAL.pdb
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.BLL\bin\Debug\Vidly.DAL.dll.config
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.BLL\bin\Debug\Vidly.MODEL.pdb
@@ -27,6 +29,8 @@ F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.BLL\bin\Debug\Vidly.MODEL.dll.confi
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.BLL\bin\Debug\Vidly.DatabaseContext.pdb
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.BLL\bin\Debug\Vidly.DatabaseContext.dll.config
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.BLL\bin\Debug\EntityFramework.xml
+F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.BLL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.BLL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.BLL\obj\Debug\Vidly.BLL.csprojAssemblyReference.cache
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.BLL\obj\Debug\Vidly.BLL.csproj.CopyComplete
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly.BLL\obj\Debug\Vidly.BLL.dll

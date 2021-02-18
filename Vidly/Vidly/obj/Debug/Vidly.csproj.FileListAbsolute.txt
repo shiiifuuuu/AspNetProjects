@@ -76,7 +76,6 @@ F:\Tutorials\Mosh\asp_net\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.ca
 F:\Tutorials\Mosh\asp_net\Vidly\Vidly\obj\Debug\Vidly.csproj.CopyComplete
 F:\Tutorials\Mosh\asp_net\Vidly\Vidly\obj\Debug\Vidly.dll
 F:\Tutorials\Mosh\asp_net\Vidly\Vidly\obj\Debug\Vidly.pdb
-F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\Vidly.dll.config
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\Vidly.dll
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\Vidly.pdb
@@ -159,11 +158,13 @@ F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\System.Web.WebPages.Deployment.
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\System.Web.WebPages.dll
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\System.Web.WebPages.Razor.dll
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\Vidly.BLL.dll
+F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\Vidly.DatabaseContext.dll
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\Vidly.MODEL.dll
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\WebGrease.dll
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\Vidly.DAL.dll
-F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\Vidly.DatabaseContext.dll
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\Vidly.BLL.pdb
+F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\Vidly.DatabaseContext.pdb
+F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\Vidly.DatabaseContext.dll.config
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\Vidly.MODEL.pdb
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\Vidly.MODEL.dll.config
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\EntityFramework.xml
@@ -195,8 +196,7 @@ F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\Antlr3.Runtime.pdb
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\Vidly.DAL.pdb
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\Vidly.DAL.dll.config
-F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\Vidly.DatabaseContext.pdb
-F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\bin\Vidly.DatabaseContext.dll.config
+F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\obj\Debug\Vidly.csproj.CopyComplete
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\obj\Debug\Vidly.dll
 F:\Tutorials\Mosh\AspNetProjects\Vidly\Vidly\obj\Debug\Vidly.pdb

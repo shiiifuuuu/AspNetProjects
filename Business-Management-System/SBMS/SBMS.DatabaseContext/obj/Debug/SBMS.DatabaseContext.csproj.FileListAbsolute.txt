@@ -16,3 +16,5 @@ F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.DatabaseCo
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.DatabaseContext\obj\Debug\SBMS.DatabaseContext.csproj.CopyComplete
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.DatabaseContext\obj\Debug\SBMS.DatabaseContext.dll
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.DatabaseContext\obj\Debug\SBMS.DatabaseContext.pdb
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.DatabaseContext\obj\Debug\SBMS.DatabaseContext.Migrations.InitialModel.resources
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.DatabaseContext\obj\Debug\SBMS.DatabaseContext.csproj.GenerateResource.cache

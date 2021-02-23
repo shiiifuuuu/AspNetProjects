@@ -55,6 +55,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseContext\ApplicationDbContext.cs" />
+    <Compile Include="Migrations\202102231349326_InitialModel.cs" />
+    <Compile Include="Migrations\202102231349326_InitialModel.Designer.cs">
+      <DependentUpon>202102231349326_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -67,6 +72,10 @@
       <Name>SBMS.Model</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202102231349326_InitialModel.resx">
+      <DependentUpon>202102231349326_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

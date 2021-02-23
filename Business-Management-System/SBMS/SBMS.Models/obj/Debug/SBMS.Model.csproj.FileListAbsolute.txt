@@ -1,0 +1,14 @@
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Models\bin\Debug\SBMS.Model.dll.config
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Models\bin\Debug\SBMS.Model.dll
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Models\bin\Debug\SBMS.Model.pdb
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Models\bin\Debug\EntityFramework.dll
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Models\bin\Debug\EntityFramework.SqlServer.dll
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Models\bin\Debug\EntityFramework.xml
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Models\bin\Debug\EntityFramework.SqlServer.xml
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Models\obj\Debug\SBMS.Model.csproj.CopyComplete
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Models\obj\Debug\SBMS.Model.dll
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Models\obj\Debug\SBMS.Model.pdb

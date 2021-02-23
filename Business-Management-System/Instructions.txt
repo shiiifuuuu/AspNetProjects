@@ -1,0 +1,17 @@
+1. Create a ASP .Net Framework MVC project template with authentication Individual and web Api ticked.
+
+2. Go to Web.config & entry ConnectionString
+
+3. Create the layer architecture by moduling Model, Manager, Repository & DatabaseContext
+
+4. install aspNet.identity.entityFramework to DatabaseContext, Model, Repository
+
+5. From solution explorer, Right click ->
+PROJECT -> add reference -> select model, manager & databaseContext
+DatabaseContext -> add reference -> model
+Manager -> add reference -> repository, model
+Repository -> add reference -> model, databaseContext
+
+6. From Project Models -> IdentityModels.cs ->
+	-> copy ApplicationUser.cs and put it to your Model Library
+	-> similarly copy ApplicationDbContext.cs and put it to your DatabaseContext Library

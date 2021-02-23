@@ -3,9 +3,10 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
-using Microsoft.Owin.Security.Google;
 using Owin;
+using SBMS.DatabaseContext.DatabaseContext;
 using SBMS.Models;
+using SBMS.Model.IdentityModel;
 
 namespace SBMS
 {

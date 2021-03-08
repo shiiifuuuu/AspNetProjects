@@ -59,6 +59,14 @@
     <Compile Include="Migrations\202102231349326_InitialModel.Designer.cs">
       <DependentUpon>202102231349326_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102231355425_CategoryModel.cs" />
+    <Compile Include="Migrations\202102231355425_CategoryModel.Designer.cs">
+      <DependentUpon>202102231355425_CategoryModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102240248236_CategoryModelUpdated.cs" />
+    <Compile Include="Migrations\202102240248236_CategoryModelUpdated.Designer.cs">
+      <DependentUpon>202102240248236_CategoryModelUpdated.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -75,6 +83,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202102231349326_InitialModel.resx">
       <DependentUpon>202102231349326_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102231355425_CategoryModel.resx">
+      <DependentUpon>202102231355425_CategoryModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102240248236_CategoryModelUpdated.resx">
+      <DependentUpon>202102240248236_CategoryModelUpdated.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

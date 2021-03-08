@@ -1,0 +1,20 @@
+﻿body {
+}
+.field-validation-error {
+    color: #fb5858;
+}
+.input-validation-error {
+    border: 2px solid #fb5858;
+
+    &:focus {
+        border: 2px solid #fb5858;
+    }
+}
+.response-text {
+    .success {
+        color: #35b101;
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+}
+

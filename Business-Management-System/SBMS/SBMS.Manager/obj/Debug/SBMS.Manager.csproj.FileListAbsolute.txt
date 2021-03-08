@@ -4,6 +4,7 @@ F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Manager\bi
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Manager\bin\Debug\SBMS.Repository.dll
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Manager\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Manager\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Manager\bin\Debug\SBMS.DatabaseContext.dll
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Manager\bin\Debug\EntityFramework.dll
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Manager\bin\Debug\SBMS.Model.pdb
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Manager\bin\Debug\SBMS.Model.dll.config
@@ -11,6 +12,8 @@ F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Manager\bi
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Manager\bin\Debug\SBMS.Repository.dll.config
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Manager\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Manager\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Manager\bin\Debug\SBMS.DatabaseContext.pdb
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Manager\bin\Debug\SBMS.DatabaseContext.dll.config
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Manager\bin\Debug\EntityFramework.xml
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Manager\obj\Debug\SBMS.Manager.csprojAssemblyReference.cache
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Manager\obj\Debug\SBMS.Manager.csproj.CopyComplete

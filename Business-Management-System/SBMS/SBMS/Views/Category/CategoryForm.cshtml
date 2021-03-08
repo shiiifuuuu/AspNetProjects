@@ -1,0 +1,46 @@
+﻿@model SBMS.Models.CategoryViewModel
+@{
+	ViewBag.Title = "Create New Category";
+}
+
+<h2>Category Form</h2>
+
+@* @using (Html.BeginForm("Save", "Category", FormMethod.Post, new { })) *@
+@* { *@
+@* 	<div class="form-group"> *@
+@* 		@Html.LabelFor(m => m.Category.Code) $1$id=Category_Code#1# *@
+@* 		@Html.TextBoxFor(m => m.Category.Code, new { @class = "form-control", placeholder = "category code" }) *@
+@* 		@Html.ValidationMessageFor(m => m.Category.Code) *@
+@* 	</div> *@
+@* 	<div class="form-group"> *@
+@* 		@Html.LabelFor(m => m.Category.Name) *@
+@* 		@Html.TextBoxFor(m => m.Category.Name, new { @class = "form-control", placeholder = "category name" }) *@
+@* 		@Html.ValidationMessageFor(m => m.Category.Name) *@
+@* 	</div> *@
+@* 	@Html.HiddenFor(m => m.Category.Id) *@
+@* 	<button class="btn" type="submit">Create</button> *@
+@* } *@
+
+<form action="/Api/Category/Post" id="save-form">
+	<div class="form-group">
+		@Html.LabelFor(m => m.Category.Code) @*id=Category_Code*@
+		@Html.TextBoxFor(m => m.Category.Code, new { @class = "form-control", placeholder = "category code" })
+		@Html.ValidationMessageFor(m => m.Category.Code)
+	</div>
+	<div class="form-group">
+		@Html.LabelFor(m => m.Category.Name)
+		@Html.TextBoxFor(m => m.Category.Name, new { @class = "form-control", placeholder = "category name" })
+		@Html.ValidationMessageFor(m => m.Category.Name)
+	</div>
+	@Html.HiddenFor(m => m.Category.Id)
+	<button class="btn" type="submit">Create</button>
+</form>
+<div id="new-category-response" class="response-text"></div>
+
+@section scripts
+{
+	@Scripts.Render("~/bundles/jqueryval")
+	@Scripts.Render("~/Scripts/Api_Class/rest-api.js")
+	@Scripts.Render("~/Scripts/Category/new-category.js")
+}
+

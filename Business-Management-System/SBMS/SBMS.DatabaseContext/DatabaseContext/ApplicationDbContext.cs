@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNet.Identity.EntityFramework;
+﻿using System.Data.Entity;
+using Microsoft.AspNet.Identity.EntityFramework;
 using SBMS.Model.IdentityModel;
+using SBMS.Model.Model;
 
 namespace SBMS.DatabaseContext.DatabaseContext
 {
@@ -14,5 +16,7 @@ namespace SBMS.DatabaseContext.DatabaseContext
 		{
 			return new ApplicationDbContext();
 		}
+
+		public DbSet<Category> Categories { set; get; }
 	}
 }

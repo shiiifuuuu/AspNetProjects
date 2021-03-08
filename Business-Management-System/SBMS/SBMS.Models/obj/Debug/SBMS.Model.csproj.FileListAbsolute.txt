@@ -9,6 +9,7 @@ F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Models\bin
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Models\bin\Debug\EntityFramework.SqlServer.xml
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Models\obj\Debug\SBMS.Model.csprojAssemblyReference.cache
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Models\obj\Debug\SBMS.Model.csproj.CopyComplete
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Models\obj\Debug\SBMS.Model.dll
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.Models\obj\Debug\SBMS.Model.pdb

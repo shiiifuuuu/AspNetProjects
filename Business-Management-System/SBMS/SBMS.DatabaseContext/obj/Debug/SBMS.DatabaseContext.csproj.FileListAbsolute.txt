@@ -13,8 +13,10 @@ F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.DatabaseCo
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.DatabaseContext\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.DatabaseContext\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.DatabaseContext\obj\Debug\SBMS.DatabaseContext.csprojAssemblyReference.cache
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.DatabaseContext\obj\Debug\SBMS.DatabaseContext.Migrations.InitialModel.resources
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.DatabaseContext\obj\Debug\SBMS.DatabaseContext.Migrations.CategoryModel.resources
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.DatabaseContext\obj\Debug\SBMS.DatabaseContext.Migrations.CategoryModelUpdated.resources
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.DatabaseContext\obj\Debug\SBMS.DatabaseContext.csproj.GenerateResource.cache
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.DatabaseContext\obj\Debug\SBMS.DatabaseContext.csproj.CopyComplete
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.DatabaseContext\obj\Debug\SBMS.DatabaseContext.dll
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.DatabaseContext\obj\Debug\SBMS.DatabaseContext.pdb
-F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.DatabaseContext\obj\Debug\SBMS.DatabaseContext.Migrations.InitialModel.resources
-F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS.DatabaseContext\obj\Debug\SBMS.DatabaseContext.csproj.GenerateResource.cache

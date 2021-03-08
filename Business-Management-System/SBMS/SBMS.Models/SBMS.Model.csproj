@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IdentityModel\ApplicationUser.cs" />
+    <Compile Include="Model\Category.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

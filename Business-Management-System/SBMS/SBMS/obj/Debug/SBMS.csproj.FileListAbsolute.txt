@@ -83,6 +83,7 @@ F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS\bin\System
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS\bin\System.Web.WebPages.dll
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS\bin\System.Web.WebPages.Razor.dll
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS\bin\WebGrease.dll
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS\bin\SBMS.Repository.dll
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS\bin\SBMS.DatabaseContext.pdb
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS\bin\SBMS.DatabaseContext.dll.config
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS\bin\SBMS.Manager.pdb
@@ -115,6 +116,8 @@ F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS\bin\Micros
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS\bin\Microsoft.Owin.Security.OAuth.xml
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS\bin\SBMS.Repository.pdb
+F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS\bin\SBMS.Repository.dll.config
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS\obj\Debug\SBMS.csprojAssemblyReference.cache
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS\obj\Debug\SBMS.csproj.CopyComplete
 F:\Tutorials\BITM\AspNetProjects\Business-Management-System\SBMS\SBMS\obj\Debug\SBMS.dll

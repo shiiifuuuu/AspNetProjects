@@ -174,6 +174,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Api\CategoryController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
@@ -181,12 +182,14 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CategoryViewModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -194,12 +197,25 @@
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\my-style.css">
+      <DependentUpon>my-style.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\my-style.min.css">
+      <DependentUpon>my-style.css</DependentUpon>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\Api_Class\rest-api.js" />
     <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Content\my-style.scss" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\Category\new-category.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
@@ -240,6 +256,8 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_NavbarPartial.cshtml" />
+    <Content Include="Views\Category\CategoryList.cshtml" />
+    <Content Include="Views\Category\CategoryForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -9,7 +9,7 @@ namespace SBMS.Api
     {
 	    CategoryManager _categoryManager = new CategoryManager();
 
-		//fetch('/api/category/')
+		//fetch('/api/category/Get')
 		[HttpGet]
 		public IHttpActionResult Get()
 		{
@@ -21,7 +21,7 @@ namespace SBMS.Api
 
 		}
 
-		//fetch('/api/category/')
+		//fetch('/api/category/Post')
 		[HttpPost]
 		public IHttpActionResult Post(Category category)
 		{
